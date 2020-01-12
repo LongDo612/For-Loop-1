@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="button1" style="width: 100px; background-color: #ffffff" onclick="bai1()">Bai 1</button>
+    <button id="button2" style="width: 100px;background-color: #ffffff" onclick="bai2()">Bai 2</button>
+    <p id="result"></p>
+    <script>
+            let bai1 = () => {
+                let text="";
+                for (let i=0;i<5;i++){
+                    text += "The number is: " + i + "<br>";
+                }
+                document.getElementById("result").innerHTML = text ;
+            }
+
+            let bai2 = () => {
+                let x = prompt("Nhap 1 so lon hon 0: "),total=0;
+                x = Number.parseInt(x);
+                for(let i=0;i<=x;i++){
+                    total += i;
+                }
+                alert(total);
+            }
+    </script>
+</body>
+</html>
